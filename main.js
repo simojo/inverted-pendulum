@@ -1,13 +1,11 @@
-// rad, clockwise [0, 2pi)
-// choose random starting point. Either -1 or 1.
-// let theta = ([2 * Math.PI - 0.001, 0.001])[Math.round(Math.random())];
-let l = 1;           // m
-let g = 9.81;        // m/s
-let thetaDesired = 0;
-let theta = Math.random() * 2 * Math.PI;
-let thetaDot = 0;    // rad/s
-let thetaDotDot = 0; // rad/s/s
+let l = 1;                               // m
+let g = 9.81;                            // m/s
+let thetaDesired = 0;                    // rad
+let theta = Math.random() * 2 * Math.PI; // rad, clockwise [0, 2pi)
+let thetaDot = 0;                        // rad/s
+let thetaDotDot = 0;                     // rad/s/s
 
+// PID values
 let P = -9.81 / 4;
 let I = -2;
 let D = 0;
